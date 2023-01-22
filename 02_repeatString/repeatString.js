@@ -1,10 +1,10 @@
 const repeatString = function(text, number) {
-let textRepeat = '';
-while (number) {
-    textRepeat += text;
-    number--;
-}
-return textRepeat;
+if (number > 0)
+    return text.repeat(number);
+if (number == 0)
+    return '';
+else 
+    return 'ERROR';
 };
 
 // Do not edit below this line
